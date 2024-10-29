@@ -1,12 +1,38 @@
-Real time chat
+# Real-Time Chat Application
 
-Build a simple chat application using raw websockets in Node.js that supports the following features:-
+A simple real-time chat application using raw WebSockets in Node.js. This application includes an admin panel to create chat rooms with configurable properties and allows users to join, chat, upvote messages, and interact in real-time.
 
-Allow an admin to create a new chat session/room. Admin should be allowed to set the following properties on the room -
+## Features
 
-Name start_time is_open cool_down_time Allow a users to join the room and send messages Allow user to upvote chat messages. If chat messages reach more than 3 upvotes, move them over to a saparate 
-section. If chat messages reach more than 10 upvotes, alert the admin to answer.
+- **Admin Room Creation**: Admin can create a new chat session/room with configurable properties.
+- **User Participation**: Users can join active rooms to chat and interact.
+- **Message Upvoting**: Users can upvote messages, triggering additional actions if the upvotes reach specific thresholds.
+- **Admin Alerts**: Messages with high upvotes alert the admin to respond.
 
-# real-time-chat
-# real-time-chat
-# real-time-chat
+## Room Properties
+
+When creating a new room, the admin can set the following properties:
+
+- **Name**: Unique name of the chat room.
+- **Start Time**: Time when the chat session is intended to start.
+- **Is Open**: Boolean to indicate if the room is currently accepting participants.
+- **Cool Down Time**: Time period after which the room closes for new messages.
+
+## Upvote Logic
+
+- Messages with more than **3 upvotes** are moved to a **Highlighted Section**.
+- Messages with more than **10 upvotes** trigger an **Admin Alert** to encourage a response.
+
+## Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/real-time-chat.git
+   cd real-time-chat
+2. **Install Dependencies**
+   ```bash
+   npm install
+
+3. **Run the Application**
+   ```bash
+   npm start
