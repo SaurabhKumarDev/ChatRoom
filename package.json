@@ -1,27 +1,23 @@
 {
-  "name": "real-time-chat",
+  "name": "chatapp",
   "version": "1.0.0",
-  "description": "Real time chat app",
-  "main": "index.js",
+  "description": "Realtime chat app with rooms",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server",
+    "dev": "nodemon server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SaurabhKumarDev/real-time-chat.git"
-  },
-  "keywords": [
-    "Chat",
-    "app"
-  ],
-  "author": "Saurabh",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SaurabhKumarDev/real-time-chat/issues"
-  },
-  "homepage": "https://github.com/SaurabhKumarDev/real-time-chat#readme",
+  "author": "Saurabh Kumar",
+  "license": "MIT",
   "dependencies": {
-    "@types/websocket": "^1.0.10",
-    "websocket": "^1.0.35"
+    "@socket.io/redis-adapter": "^7.1.0",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.1",
+    "moment": "^2.24.0",
+    "redis": "^4.0.2",
+    "socket.io": "^4.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
   }
 }
